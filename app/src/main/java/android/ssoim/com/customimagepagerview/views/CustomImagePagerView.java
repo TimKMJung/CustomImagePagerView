@@ -1,4 +1,4 @@
-package android.ssoim.com.customimagepagerview;
+package android.ssoim.com.customimagepagerview.views;
 
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
@@ -8,6 +8,7 @@ import android.renderscript.Allocation;
 import android.renderscript.Element;
 import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
+import android.ssoim.com.customimagepagerview.R;
 import android.ssoim.com.customimagepagerview.adapters.CustomViewPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
