@@ -54,7 +54,7 @@ public class CustomImagePagerView extends AppCompatActivity implements ViewPager
         BitmapDrawable dblurred = blurRenderer(drawable);
         bgImg.setBackground(dblurred);
 
-        introPager = (ViewPager) findViewById(R.id.custom_purpose_pager);
+        introPager = (ViewPager) findViewById(R.id.custom_pager);
 
         // SET INDICATOR
         metrics = new DisplayMetrics();
@@ -63,7 +63,7 @@ public class CustomImagePagerView extends AppCompatActivity implements ViewPager
         introPager.setPageMargin(-pageMargin);
 
         // SET VIEWPAGER
-        pager_indicator = (LinearLayout) findViewById(R.id.aim_pager_dots);
+        pager_indicator = (LinearLayout) findViewById(R.id.pager_dots);
         mAdapter = new CustomViewPagerAdapter(this, mImageResources);
         introPager.setAdapter(mAdapter);
         introPager.setCurrentItem(0);
@@ -153,7 +153,6 @@ public class CustomImagePagerView extends AppCompatActivity implements ViewPager
         }
 
         dots[position].setImageDrawable(getResources().getDrawable(R.drawable.selected_dot));
-
 
     }
 
